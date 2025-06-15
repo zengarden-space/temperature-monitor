@@ -31,7 +31,7 @@ export default function App() {
   const fetchTemperatures = async () => {
     try {
       setError(null);
-      const response = await fetch('https://temperature-monitor.zengarden.space/api/temperatures');
+      const response = await fetch('/api/temperatures');
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
