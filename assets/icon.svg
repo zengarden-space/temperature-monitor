@@ -1,94 +1,410 @@
-<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
-  <defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="192"
+   height="192"
+   viewBox="0 0 192 192"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="adaptive-icon.png"
+   inkscape:export-xdpi="512"
+   inkscape:export-ydpi="512"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.578125"
+     inkscape:cx="96"
+     inkscape:cy="96"
+     inkscape:window-width="1712"
+     inkscape:window-height="926"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31" />
+  <defs
+     id="defs7">
     <!-- Gradient for server rack -->
-    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#2d3748;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    <linearGradient
+       id="serverGradient"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#4a5568;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="50%"
+         style="stop-color:#2d3748;stop-opacity:1"
+         id="stop2" />
+      <stop
+         offset="100%"
+         style="stop-color:#1a202c;stop-opacity:1"
+         id="stop3" />
     </linearGradient>
-    
     <!-- Gradient for temperature indicator -->
-    <linearGradient id="tempGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#48bb78;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ed8936;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#e53e3e;stop-opacity:1" />
+    <linearGradient
+       id="tempGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         style="stop-color:#48bb78;stop-opacity:1"
+         id="stop4" />
+      <stop
+         offset="50%"
+         style="stop-color:#ed8936;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#e53e3e;stop-opacity:1"
+         id="stop6" />
     </linearGradient>
-    
     <!-- Glow effect -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+    <filter
+       id="glow"
+       x="-1.8"
+       y="-1.8"
+       width="4.6"
+       height="4.6">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="coloredBlur"
+         id="feGaussianBlur6" />
+      <feMerge
+         id="feMerge7">
+        <feMergeNode
+           in="coloredBlur"
+           id="feMergeNode6" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7" />
       </feMerge>
     </filter>
   </defs>
-  
   <!-- Background circle -->
-  <circle cx="96" cy="96" r="92" fill="#1a202c" stroke="#4a5568" stroke-width="4"/>
-  
+  <circle
+     cx="96"
+     cy="96"
+     r="92"
+     fill="#1a202c"
+     stroke="#4a5568"
+     stroke-width="4"
+     id="circle7" />
   <!-- Server rack outline -->
-  <rect x="48" y="32" width="96" height="128" rx="8" ry="8" 
-        fill="url(#serverGradient)" stroke="#718096" stroke-width="2"/>
-  
+  <rect
+     x="48"
+     y="32"
+     width="96"
+     height="128"
+     rx="8"
+     ry="8"
+     fill="url(#serverGradient)"
+     stroke="#718096"
+     stroke-width="2"
+     id="rect7" />
   <!-- Server slots -->
-  <rect x="56" y="40" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="56" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="72" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="88" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="104" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="120" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  <rect x="56" y="136" width="80" height="12" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-  
+  <rect
+     x="56"
+     y="40"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect8" />
+  <rect
+     x="56"
+     y="56"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect9" />
+  <rect
+     x="56"
+     y="72"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect10" />
+  <rect
+     x="56"
+     y="88"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect11" />
+  <rect
+     x="56"
+     y="104"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect12" />
+  <rect
+     x="56"
+     y="120"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect13" />
+  <rect
+     x="56"
+     y="136"
+     width="80"
+     height="12"
+     rx="2"
+     fill="#2d3748"
+     stroke="#4a5568"
+     stroke-width="1"
+     id="rect14" />
   <!-- LED indicators on servers -->
-  <circle cx="130" cy="46" r="2" fill="#48bb78" filter="url(#glow)"/>
-  <circle cx="130" cy="62" r="2" fill="#ed8936" filter="url(#glow)"/>
-  <circle cx="130" cy="78" r="2" fill="#e53e3e" filter="url(#glow)"/>
-  <circle cx="130" cy="94" r="2" fill="#48bb78" filter="url(#glow)"/>
-  <circle cx="130" cy="110" r="2" fill="#ed8936" filter="url(#glow)"/>
-  <circle cx="130" cy="126" r="2" fill="#e53e3e" filter="url(#glow)"/>
-  <circle cx="130" cy="142" r="2" fill="#48bb78" filter="url(#glow)"/>
-  
+  <circle
+     cx="130"
+     cy="46"
+     r="2"
+     fill="#48bb78"
+     filter="url(#glow)"
+     id="circle14" />
+  <circle
+     cx="130"
+     cy="62"
+     r="2"
+     fill="#ed8936"
+     filter="url(#glow)"
+     id="circle15" />
+  <circle
+     cx="130"
+     cy="78"
+     r="2"
+     fill="#e53e3e"
+     filter="url(#glow)"
+     id="circle16" />
+  <circle
+     cx="130"
+     cy="94"
+     r="2"
+     fill="#48bb78"
+     filter="url(#glow)"
+     id="circle17" />
+  <circle
+     cx="130"
+     cy="110"
+     r="2"
+     fill="#ed8936"
+     filter="url(#glow)"
+     id="circle18" />
+  <circle
+     cx="130"
+     cy="126"
+     r="2"
+     fill="#e53e3e"
+     filter="url(#glow)"
+     id="circle19" />
+  <circle
+     cx="130"
+     cy="142"
+     r="2"
+     fill="#48bb78"
+     filter="url(#glow)"
+     id="circle20" />
   <!-- Temperature gauge -->
-  <g transform="translate(160, 60)">
+  <g
+     transform="translate(160, 60)"
+     id="g25">
     <!-- Thermometer body -->
-    <rect x="-4" y="0" width="8" height="80" rx="4" fill="#e2e8f0" stroke="#a0aec0" stroke-width="1"/>
-    
+    <rect
+       x="-4"
+       y="0"
+       width="8"
+       height="80"
+       rx="4"
+       fill="#e2e8f0"
+       stroke="#a0aec0"
+       stroke-width="1"
+       id="rect20" />
     <!-- Temperature fill -->
-    <rect x="-2" y="20" width="4" height="58" rx="2" fill="url(#tempGradient)"/>
-    
+    <rect
+       x="-2"
+       y="20"
+       width="4"
+       height="58"
+       rx="2"
+       fill="url(#tempGradient)"
+       id="rect21" />
     <!-- Thermometer bulb -->
-    <circle cx="0" cy="84" r="6" fill="#e53e3e" stroke="#c53030" stroke-width="1"/>
-    
+    <circle
+       cx="0"
+       cy="84"
+       r="6"
+       fill="#e53e3e"
+       stroke="#c53030"
+       stroke-width="1"
+       id="circle21" />
     <!-- Temperature scale marks -->
-    <line x1="6" y1="20" x2="10" y2="20" stroke="#718096" stroke-width="1"/>
-    <line x1="6" y1="35" x2="8" y2="35" stroke="#718096" stroke-width="1"/>
-    <line x1="6" y1="50" x2="10" y2="50" stroke="#718096" stroke-width="1"/>
-    <line x1="6" y1="65" x2="8" y2="65" stroke="#718096" stroke-width="1"/>
-    <line x1="6" y1="80" x2="10" y2="80" stroke="#718096" stroke-width="1"/>
+    <line
+       x1="6"
+       y1="20"
+       x2="10"
+       y2="20"
+       stroke="#718096"
+       stroke-width="1"
+       id="line21" />
+    <line
+       x1="6"
+       y1="35"
+       x2="8"
+       y2="35"
+       stroke="#718096"
+       stroke-width="1"
+       id="line22" />
+    <line
+       x1="6"
+       y1="50"
+       x2="10"
+       y2="50"
+       stroke="#718096"
+       stroke-width="1"
+       id="line23" />
+    <line
+       x1="6"
+       y1="65"
+       x2="8"
+       y2="65"
+       stroke="#718096"
+       stroke-width="1"
+       id="line24" />
+    <line
+       x1="6"
+       y1="80"
+       x2="10"
+       y2="80"
+       stroke="#718096"
+       stroke-width="1"
+       id="line25" />
   </g>
-  
   <!-- Temperature readings display -->
-  <g transform="translate(24, 60)">
-    <rect x="0" y="0" width="20" height="40" rx="2" fill="#1a202c" stroke="#4a5568" stroke-width="1"/>
-    
+  <g
+     transform="translate(24, 60)"
+     id="g27">
+    <rect
+       x="0"
+       y="0"
+       width="20"
+       height="40"
+       rx="2"
+       fill="#1a202c"
+       stroke="#4a5568"
+       stroke-width="1"
+       id="rect25" />
     <!-- Digital display segments -->
-    <text x="10" y="12" text-anchor="middle" font-family="monospace" font-size="6" fill="#48bb78">55°</text>
-    <text x="10" y="24" text-anchor="middle" font-family="monospace" font-size="6" fill="#ed8936">67°</text>
-    <text x="10" y="36" text-anchor="middle" font-family="monospace" font-size="6" fill="#e53e3e">82°</text>
+    <text
+       x="10"
+       y="12"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="6"
+       fill="#48bb78"
+       id="text25">55°</text>
+    <text
+       x="10"
+       y="24"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="6"
+       fill="#ed8936"
+       id="text26">67°</text>
+    <text
+       x="10"
+       y="36"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="6"
+       fill="#e53e3e"
+       id="text27">82°</text>
   </g>
-  
   <!-- Data flow lines -->
-  <path d="M 44 80 Q 30 80 20 96 Q 30 112 44 112" 
-        stroke="#4299e1" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M 148 80 Q 162 80 172 96 Q 162 112 148 112" 
-        stroke="#4299e1" stroke-width="2" fill="none" opacity="0.6"/>
-  
+  <path
+     d="M 44 80 Q 30 80 20 96 Q 30 112 44 112"
+     stroke="#4299e1"
+     stroke-width="2"
+     fill="none"
+     opacity="0.6"
+     id="path27" />
+  <path
+     d="M 148 80 Q 162 80 172 96 Q 162 112 148 112"
+     stroke="#4299e1"
+     stroke-width="2"
+     fill="none"
+     opacity="0.6"
+     id="path28" />
   <!-- Small monitoring icons -->
-  <g transform="translate(96, 170)">
-    <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
-    <rect x="-6" y="-2" width="4" height="4" rx="1" fill="#4299e1"/>
-    <rect x="-1" y="-2" width="4" height="4" rx="1" fill="#48bb78"/>
-    <rect x="4" y="-2" width="4" height="4" rx="1" fill="#ed8936"/>
+  <g
+     transform="translate(96, 170)"
+     id="g31">
+    <rect
+       x="-8"
+       y="-4"
+       width="16"
+       height="8"
+       rx="2"
+       fill="#2d3748"
+       stroke="#4a5568"
+       stroke-width="1"
+       id="rect28" />
+    <rect
+       x="-6"
+       y="-2"
+       width="4"
+       height="4"
+       rx="1"
+       fill="#4299e1"
+       id="rect29" />
+    <rect
+       x="-1"
+       y="-2"
+       width="4"
+       height="4"
+       rx="1"
+       fill="#48bb78"
+       id="rect30" />
+    <rect
+       x="4"
+       y="-2"
+       width="4"
+       height="4"
+       rx="1"
+       fill="#ed8936"
+       id="rect31" />
   </g>
 </svg>
