@@ -10,6 +10,7 @@ import {
   ActivityIndicator 
 } from 'react-native';
 import { DataTable, Provider as PaperProvider, Appbar, Card } from 'react-native-paper';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 interface TemperatureMeasurement {
   node: string;
@@ -63,6 +64,24 @@ export default function App() {
     return `${temp.toFixed(1)}°C`;
   };
 
+  const renderTemperatureWithWarning = (temp: number, showWarning: boolean = false) => {
+    return (
+      <View style={styles.temperatureRow}>
+        <Text style={[styles.temperatureText, showWarning && temp > 75 && styles.highTemperature]}>
+          {formatTemperature(temp)}
+        </Text>
+        {showWarning && temp > 75 && (
+          <MaterialCommunityIcons 
+            name="fire" 
+            size={16} 
+            color="#ff4444" 
+            style={styles.warningIcon}
+          />
+        )}
+      </View>
+    );
+  };
+
   if (loading) {
     return (
       <PaperProvider>
@@ -106,7 +125,9 @@ export default function App() {
                   {measurements.map((measurement, index) => (
                     <DataTable.Row key={measurement.node || index}>
                       <DataTable.Cell>{measurement.node}</DataTable.Cell>
-                      <DataTable.Cell numeric>{formatTemperature(measurement.minutely_temperature)}</DataTable.Cell>
+                      <DataTable.Cell numeric>
+                        {renderTemperatureWithWarning(measurement.minutely_temperature, true)}
+                      </DataTable.Cell>
                       <DataTable.Cell numeric>{formatTemperature(measurement.hourly_temperature)}</DataTable.Cell>
                       <DataTable.Cell numeric>{formatTemperature(measurement.daily_temperature)}</DataTable.Cell>
                     </DataTable.Row>
@@ -166,5 +187,20 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 8,
     marginBottom: 16,
+  },
+  temperatureRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  temperatureText: {
+    fontSize: 14,
+  },
+  highTemperature: {
+    color: '#ff4444',
+    fontWeight: 'bold',
+  },
+  warningIcon: {
+    marginLeft: 4,
   },
 });
