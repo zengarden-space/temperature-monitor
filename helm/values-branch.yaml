@@ -1,0 +1,10 @@
+ingress:
+  hosts:
+    - host: temperature-monitor.branch-{{BRANCH_ID}}.zengarden.space
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    hosts:
+    - temperature-monitor.branch-{{BRANCH_ID}}.zengarden.space
+    secretName: temperature-monitor-tls
